@@ -1,0 +1,31 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: center;
+  gap: 50px;
+}
+
+.case {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.caseBlurred {
+  filter: blur(2px); /* Flou par défaut */
+}
+
+.case:hover {
+  filter: blur(0); /* Retirer le flou au survol */
+  border-color: red; /* Bordure rouge au survol */
+}
+
+.case:active {
+  width: 400px; /* Agrandir la case lors du clic */
+}
