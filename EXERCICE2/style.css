@@ -1,29 +1,22 @@
-.modalIn {
+.modal {
+  display: none;
+}
+
+.modalOpen {
+  display: flex;
+  background-color: white;
   width: 200px;
   height: 200px;
   text-align: center;
-  display: flex;
-  background-color: white;
-  
 }
 
-.modalOut {
-  display: grid;
+.bgGrey {
+  background-color: grey;
+}
 
-  background: hsla(0, 0%, 46%, 0.7);
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
+.container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-pointer-events: none;
-transition: opacity 0.2s;
-}
-
-.modalOut.open {
-    opacity: 1;
-    pointer-events: all;
 }
