@@ -9,6 +9,8 @@ listener.addEventListener("keyup", handleKeyDown);
 function handleKeyDown(event) {
   if (["m", "c"].includes(event.key) && !combi.includes(event.key)) {
     combi.push(event.key); // Ajoute la touche si elle n'est pas déjà dans la combinaison
+  console.log(event.key);
+  
   }
 
   // Vérifie si la combinaison "m" et "c" est pressée
