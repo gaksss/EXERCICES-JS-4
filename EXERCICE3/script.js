@@ -4,7 +4,7 @@ const texte = document.createTextNode("BRAVOOOOOOO");
 para.appendChild(texte);
 let combi = []; // Initialisation de la combinaison de touches
 
-listener.addEventListener("keyup", handleKeyDown);
+listener.addEventListener("keydown", handleKeyDown);
 
 function handleKeyDown(event) {
   if (["m", "c"].includes(event.key) && !combi.includes(event.key)) {
